@@ -138,10 +138,8 @@ function flashType() {
   </VRow>
 
   <VContainer max-width="600px">
-    <VCardTitle>Hardware Selection</VCardTitle>
-    <VCardText>Choose the vendor specific hardware that you are flashing, if the hardware is not in the list then the
-      hardware is unsupported.
-    </VCardText>
+    <VCardTitle>硬件选型</VCardTitle>
+    <VCardText>选择您要刷新的供应商特定硬件，如果该硬件不在列表中，则硬件不受支持。</VCardText>
     <br>
     <VSelect :items="versions" v-model="store.version" density="compact" label="Firmware Version"/>
     <VSelect :items="vendors" v-model="store.vendor" density="compact" label="Hardware Vendor"
@@ -150,7 +148,7 @@ function flashType() {
              :disabled="!store.vendor"/>
     <VAutocomplete :items="targets" v-model="store.target" density="compact" label="Hardware Target"/>
     <a :href="luaUrl" download>
-      <VBtn :disabled="!luaUrl">Download ELRS Lua Script</VBtn>
+      <VBtn :disabled="!luaUrl">下载 Lua 脚本</VBtn>
     </a>
   </VContainer>
 </template>

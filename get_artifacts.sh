@@ -24,7 +24,7 @@ done
 # Download the published hardware targets into the `firmware` directory
 mkdir hardware
 cd hardware
-curl -L -o hardware.zip https://artifactory.expresslrs.org/ExpressLRS/hardware.zip
+curl -L -o hardware.zip https://bs.alezh.top/hardware.zip
 unzip -q hardware.zip
 rm hardware.zip
 

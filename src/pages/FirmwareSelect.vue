@@ -15,56 +15,56 @@ function setFirmware(firmware, targetType) {
 <template>
   <div class="containerMain">
     <div class="containerHeader">
-      <VCardTitle>Main RC Firmware</VCardTitle>
+      <VCardTitle>主控 固件</VCardTitle>
       <VCardSubtitle>Controlled or controlling... we got you covered!</VCardSubtitle>
     </div>
     <VRow>
       <VCol md="6">
         <HoverCard min-height="100%" @click="setFirmware('firmware', 'tx')"
                     image="transmitter_6275858.png" hover-image="transmitter_6276574.png"
-                    title="Transmitter"
+                    title="高频头"
                     text="Update your external transmitter module, JR Bay (Micro) or Nano module; or an internal module
                     built into your radio handset."/>
       </VCol>
       <VCol md="6">
         <HoverCard min-height="100%" @click="setFirmware('firmware', 'rx')"
                     image="reciever_6276002.png" hover-image="reciever_6276814.png"
-                    title="Receiver"
+                    title="接收机"
                     text="Serial connected and PWM receivers alike can be updated here."/>
       </VCol>
     </VRow>
   </div>
   <div class="containerMain">
     <div class="containerHeader">
-      <VCardTitle>Backpack Firmware</VCardTitle>
+      <VCardTitle>背包 固件</VCardTitle>
       <VCardSubtitle>Wireless control of <i>all</i> the things!</VCardSubtitle>
     </div>
     <VRow>
       <VCol md="3">
         <HoverCard min-height="100%" @click="setFirmware('backpack', 'txbp')"
                     image="backpack_723137.png" hover-image="backpack_723278.png"
-                    title="Transmitter Module"
+                    title="发射模块"
                     text="Built in to most transmitters, it communicates with the other backpacks or via WiFi to a computer
                     running Mission Planner (or other) for MAVLink craft."/>
       </VCol>
       <VCol md="3">
         <HoverCard min-height="100%" @click="setFirmware('backpack', 'vrx')"
                     image="vr-glasses_8736938.png" hover-image="vr-glasses_8737003.png"
-                    title="Video Receiver"
+                    title="视频接受"
                     text="A built-in VRx backpack like the HDZero goggles backpack, or the SkyZone ELRS backpack; or a
                     DIY solution connected to a VRx allows you to always have your goggles on the right channel."/>
       </VCol>
       <VCol md="3">
         <HoverCard min-height="100%" @click="setFirmware('backpack', 'aat')"
                     image="satellite_2637312.png" hover-image="satellite_2637314.png"
-                    title="Antenna Tracker"
+                    title="天线追踪"
                     text="Flying long-range and need your antenna pointed in just the right direction? This is the backpack
                     for you!"/>
       </VCol>
       <VCol md="3">
         <HoverCard min-height="100%" @click="setFirmware('backpack', 'timer')"
                     image="stopwatch_4354897.png" hover-image="stopwatch_4355918.png"
-                    title="Race Timer"
+                    title="比赛计时器"
                     text="Connects to the RotorHazard race timing system and sends OSD message with lap times and current
                     place during the race so you always know where you're placed."/>
       </VCol>
